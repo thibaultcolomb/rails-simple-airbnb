@@ -1,0 +1,35 @@
+
+  <div class=" d-flex w-75 justify-content-center">
+    <div class=" w-50 mt-3">
+        <div class="border p-3 bg-secondary bg-opacity-10">
+          <h2><%= @flat.name %></h2>
+          <p><%= @flat.address%></p>
+        </div>
+        <div class="border p-3 bg-secondary bg-opacity-10 mt-3">
+          <h4>A bit more about this flat...</h4>
+          <p><%= @flat.description%></p>
+        </div>
+        <div class="border p-3 bg-secondary bg-opacity-10 mt-3">
+          <h4>Details</h4>
+            <div class="d-flex align-items-center">
+              <i class="fa-solid fa-people-group"></i>
+              <p class="px-2 mb-0"><%= @flat.number_of_guests%></p>
+              <i class="fa-solid fa-euro-sign"></i>
+              <p class="px-2 mb-0"><%= @flat.price_per_night%></p>
+            </div>
+        </div>
+    </div>
+
+    <div class=" ms-5 mt-3 ">
+      <div class="border">
+        <h4>Book this place !</h4>
+        <form action="">
+          <label for="from">From</label>
+          <input type="text" name="from">
+          <input type="text">
+        </form>
+        <button class="btn btn-success justify-content-center">Book</button>
+      </div>
+    </div>
+
+  </div>
